@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+    prod-cap-email-back:
+        container_name: ovcap-email-back-prod
+        build:
+            context: .
+            dockerfile: Dockerfile-prod
+        command: dist/index.js
+        restart: always
+        ports:
+            - "${PORT}:${PORT}"
+        expose:
+            - ${PORT}
+        env_file:
+            - ./.env
