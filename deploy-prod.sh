@@ -1,5 +1,5 @@
-git pull origin main
-git checkout main
+git pull origin master
+git checkout master
 cp .env.example .env
 
 echo "Starting prod front container..."
