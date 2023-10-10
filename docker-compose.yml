@@ -1,8 +1,8 @@
 version: '3.1'
 
 services:
-    prod-cap-email-back:
-        container_name: ovcap-email-back-prod
+    sendsay-integration:
+        container_name: sendsay-integration
         build:
             context: .
             dockerfile: Dockerfile-prod
