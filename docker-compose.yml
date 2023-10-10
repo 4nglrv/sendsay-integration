@@ -10,7 +10,5 @@ services:
         restart: always
         ports:
             - "${PORT}:${PORT}"
-        expose:
-            - ${PORT}
         env_file:
             - ./.env
