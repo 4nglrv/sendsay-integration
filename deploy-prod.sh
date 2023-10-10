@@ -1,4 +1,4 @@
 cp .env.example .env
 
-echo "Starting prod front container..."
-docker compose --env-file .env -f docker-compose.yml up sendsay-integration --build -d || echo "Error occurred when starting backend container"
+echo "Starting prod senday-integration container..."
+docker-compose up --build -d || echo "Error occurred when starting senday-integration container"

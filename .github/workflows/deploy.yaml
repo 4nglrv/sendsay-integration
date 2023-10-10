@@ -14,7 +14,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: 
       - name: SSH-agent setup
         shell: bash
         run: |
