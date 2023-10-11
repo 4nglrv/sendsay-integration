@@ -12,3 +12,8 @@ services:
             - "${PORT}:${PORT}"
         env_file:
             - ./.env
+        networks:
+            - ${DOCKER_NETWORKS}
+networks:
+    excavation-site_proxynet:
+        external: true
