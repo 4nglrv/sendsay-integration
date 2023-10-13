@@ -2,6 +2,10 @@
 
 Express.js сервер для интеграции с сервисом email рассылки [sendsay](https://sendsay.ru/)
 
+## Routes
+
+`/email/add` - добавление email в подписки 
+
 ## Enviroments
 
 ```bash
