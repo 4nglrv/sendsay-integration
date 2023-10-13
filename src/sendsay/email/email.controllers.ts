@@ -17,7 +17,7 @@ export async function addController(req: Request, res: Response) {
       );
     }
 
-    res.send({ msg: 'Subscription successful' });
+    res.send({ msg: 'You have joined!' });
     console.log(`Log [${req.ip}]: subscription successful ${email}`);
   } catch (err) {
     if (err instanceof Error) {
